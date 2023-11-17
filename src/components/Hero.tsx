@@ -23,7 +23,7 @@ const Hero = ()=>{
             <p className={`${styles.heroHeadText} mt-2 text-neutral w-[50vh] lg:w-[70vh] text-gradient`}>Front-end Developer & Passionate Designer</p>
             </div>
             
-            <div  className='absolute bottom-0 w-full h-full'>
+            <div  className='-z-100 h-full w-full relative bottom-0 '>
              <ModelCanvas></ModelCanvas>
             </div>
 
