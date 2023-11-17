@@ -31,23 +31,47 @@ const Skills = ()=>{
             addAnimation();
         }
 
+        // function addAnimation(): void {
+        //     scrollers.forEach((scroller: HTMLElement) => {
+        //       // add data-animated="true" to every `.scroller` on the page
+        //       scroller.setAttribute("data-animated", "true");
+          
+        //       // Make an array from the elements within `.scroller-inner`
+        //       const scrollerInner: HTMLElement = scroller.querySelector(".scroller__inner");
+        //       const scrollerContent: HTMLElement[] = Array.from(scrollerInner.children);
+          
+        //       // For each item in the array, clone it
+        //       // add aria-hidden to it
+        //       // add it into the `.scroller-inner`
+        //       scrollerContent.forEach((item: HTMLElement) => {
+        //         const duplicatedItem: HTMLElement = item.cloneNode(true) as HTMLElement;
+        //         duplicatedItem.setAttribute("aria-hidden", "true");
+        //         scrollerInner.appendChild(duplicatedItem);
+        //       });
+        //     });
+        //   }
         function addAnimation(): void {
-            scrollers.forEach((scroller: HTMLElement) => {
-              // add data-animated="true" to every `.scroller` on the page
-              scroller.setAttribute("data-animated", "true");
+            scrollers.forEach((scroller: Element) => {
+              if (scroller instanceof HTMLElement) {
+                // add data-animated="true" to every `.scroller` on the page
+                scroller.setAttribute("data-animated", "true");
           
-              // Make an array from the elements within `.scroller-inner`
-              const scrollerInner: HTMLElement = scroller.querySelector(".scroller__inner");
-              const scrollerContent: HTMLElement[] = Array.from(scrollerInner.children);
+                // Make an array from the elements within `.scroller-inner`
+                const scrollerInner: HTMLElement | null = scroller.querySelector(".scroller__inner");
           
-              // For each item in the array, clone it
-              // add aria-hidden to it
-              // add it into the `.scroller-inner`
-              scrollerContent.forEach((item: HTMLElement) => {
-                const duplicatedItem: HTMLElement = item.cloneNode(true) as HTMLElement;
-                duplicatedItem.setAttribute("aria-hidden", "true");
-                scrollerInner.appendChild(duplicatedItem);
-              });
+                if (scrollerInner) {
+                    const scrollerContent: HTMLElement[] = Array.from(scrollerInner.children) as HTMLElement[];
+          
+                  // For each item in the array, clone it
+                  // add aria-hidden to it
+                  // add it into the `.scroller-inner`
+                  scrollerContent.forEach((item: HTMLElement) => {
+                    const duplicatedItem: HTMLElement = item.cloneNode(true) as HTMLElement;
+                    duplicatedItem.setAttribute("aria-hidden", "true");
+                    scrollerInner.appendChild(duplicatedItem);
+                  });
+                }
+              }
             });
           }
     },[])
