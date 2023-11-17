@@ -51,7 +51,7 @@ const Contacts = ()=>{
                 </div>
             </div>
 
-            <div className="card w-full h-full bg-white shadow-xl  text-neutral ">
+            <div className="card w-full h-full bg-white shadow-xl  text-neutral mt-5 ">
                 <div className="card-body">
                     <div className='grid grid-cols-1 lg:grid-cols-2 my-auto'>
                         <div className='p-6 space-y-4'>

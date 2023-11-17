@@ -31,25 +31,7 @@ const Skills = ()=>{
             addAnimation();
         }
 
-        // function addAnimation(): void {
-        //     scrollers.forEach((scroller: HTMLElement) => {
-        //       // add data-animated="true" to every `.scroller` on the page
-        //       scroller.setAttribute("data-animated", "true");
-          
-        //       // Make an array from the elements within `.scroller-inner`
-        //       const scrollerInner: HTMLElement = scroller.querySelector(".scroller__inner");
-        //       const scrollerContent: HTMLElement[] = Array.from(scrollerInner.children);
-          
-        //       // For each item in the array, clone it
-        //       // add aria-hidden to it
-        //       // add it into the `.scroller-inner`
-        //       scrollerContent.forEach((item: HTMLElement) => {
-        //         const duplicatedItem: HTMLElement = item.cloneNode(true) as HTMLElement;
-        //         duplicatedItem.setAttribute("aria-hidden", "true");
-        //         scrollerInner.appendChild(duplicatedItem);
-        //       });
-        //     });
-        //   }
+
         function addAnimation(): void {
             scrollers.forEach((scroller: Element) => {
               if (scroller instanceof HTMLElement) {
@@ -88,7 +70,7 @@ const Skills = ()=>{
             <motion.div variants={fadeIn("right","spring",0.1,1)} className=' justify-center items-center p-4'>
 
                 <div className="mockup-window  bg-base-300/10">
-                    <div className=" justify-center px-4 py-16 bg-base-200/20">
+                    <div className=" justify-center px-4 py-16 bg-base-200/25">
                     <h2 className={`${styles.sectionSubText}  text-center`}>
                             Frontend Developer
                         </h2>
