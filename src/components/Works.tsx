@@ -15,7 +15,7 @@ interface Props {
 
 
 
-const ProjectCard = ({index,name,description,image,source_code_link}:Props)=>(
+const ProjectCard = ({index,name,description,image}:Props)=>(
 
     <motion.div variants={fadeIn("right","spring",0.5*index,0.75)} className="card sm:w-[360px] w-full bg-base-100 shadow-xl">
         <figure className='h-36'><img src={image} alt={name} /></figure>
