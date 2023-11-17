@@ -70,11 +70,11 @@ const Skills = ()=>{
             <motion.div variants={fadeIn("right","spring",0.1,1)} className=' justify-center items-center p-4'>
 
                 <div className="mockup-window  bg-base-300/10">
-                    <div className=" justify-center px-4 py-16 bg-base-200/25">
-                    <h2 className={`${styles.sectionSubText}  text-center`}>
+                    <div className=" justify-center px-4 py-16 bg-base-200/45">
+                    <h2 className={`${styles.sectionSubText}  text-center text-bold !text-neutral/50`}>
                             Frontend Developer
                         </h2>
-                        <p className='mt-3  font-medium text-[17px] max-w-3xl leading-[30px] p-4 text'>
+                        <p className='mt-3 !text-neutral/50  font-medium text-[17px] max-w-3xl leading-[30px] p-4 text'>
                             Proficient in React, Vue.js, and Angular, with a strong passion for UI/UX. I build web applications efficiently, prioritizing a seamless user experience.
                         </p>
                     </div>
@@ -87,11 +87,11 @@ const Skills = ()=>{
                     <div className="mockup-browser-toolbar ">
                         <div className="input">https://www.tvkaes.dev</div>
                     </div>
-                    <div className="justify-center px-4 py-16 bg-base-200/20">
-                        <h2 className={`${styles.sectionSubText}  text-center`}>
+                    <div className="justify-center px-4 py-16 bg-base-200/45">
+                        <h2 className={`${styles.sectionSubText} !text-neutral/50  text-center`}>
                            Software & Web Dev
                         </h2>
-                        <p className='mt-3  font-medium text-[17px] max-w-3xl leading-[30px] p-1.5'>
+                        <p className='mt-3 !text-neutral/50 font-medium text-[17px] max-w-3xl leading-[30px] p-1.5'>
                         Web and software developer specializing in JavaScript and TypeScript, with expertise in both frontend and backend solutions using Node.js and MongoDB.
                         </p>
                     </div>
