@@ -1,4 +1,4 @@
-import {easeInOut, motion} from 'framer-motion'
+import {motion} from 'framer-motion'
 import { SectionWrapper } from '../hoc'
 import { styles } from '../styles'
 import { fadeIn,textVariant, } from '../utils/motion'
@@ -13,7 +13,7 @@ interface Props{
 
 const Skill = ({index,name,icon}:Props)=>(
    
-    <li>
+    <li key={index}>
         <motion.div className="avatar" >
             <div className="w-24 bg-white/20 shadow-md shadow-black/5 object-contain rounded-full p-4">
                 <img alt={name} src={icon} />

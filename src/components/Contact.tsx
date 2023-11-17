@@ -26,7 +26,7 @@ const Media = ({index,icon,name,link}:Props)=>(
 
 const Contacts = ()=>{
 
-    const [inputValue, setInputValue] = useState('JJGonzalezJ0@gmail.com');
+    const [inputValue] = useState('JJGonzalezJ0@gmail.com');
 
 
   

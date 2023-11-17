@@ -14,7 +14,6 @@ import {
   three,
   nest,
   twitter,
-  gmail,
   github,
   linkedin
 } from '../assets'

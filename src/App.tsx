@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router-dom'
-import { About, Works,Skills, Contact } from './components'
+import { About,Skills, Contact } from './components'
 import {Hero} from './components'
 import Navbar from './components/Navbar'
 

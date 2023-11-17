@@ -1,5 +1,5 @@
-import React,{Suspense,useEffect,useState,useRef} from 'react'
-import { Canvas,extend,useFrame, useThree } from '@react-three/fiber'
+import {Suspense,useEffect,useState} from 'react'
+import { Canvas,extend } from '@react-three/fiber'
 import { MeshDistortMaterial, OrbitControls,Preload,Sphere,useGLTF,useAnimations,} from '@react-three/drei'
 
 extend({ OrbitControls,useAnimations,useGLTF})

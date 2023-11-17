@@ -1,7 +1,7 @@
-import {motion} from 'framer-motion'
+
 import { styles } from '../styles'
 import ModelCanvas from './canvas/sphere'
-import { fadeIn } from '../utils/motion'
+
 
 
 
