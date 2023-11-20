@@ -26,7 +26,7 @@ const navLinks = [
     },
     {
       id: "skills",
-      title: "skills",
+      title: "Skills",
     },
     {
       id: "contact",

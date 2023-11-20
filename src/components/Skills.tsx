@@ -71,10 +71,10 @@ const Skills = ()=>{
 
                 <div className="mockup-window  bg-base-300/10">
                     <div className=" justify-center px-4 py-16 bg-base-200/45">
-                    <h2 className={`${styles.sectionSubText}  text-center text-bold !text-neutral/50`}>
+                    <h2 className={`${styles.sectionSubText}  text-center text-bold !text-neutral/70`}>
                             Frontend Developer
                         </h2>
-                        <p className='mt-3 !text-neutral/50  font-medium text-[17px] max-w-3xl leading-[30px] p-4 text'>
+                        <p className='mt-3 !text-neutral/70  font-medium text-[17px] max-w-3xl leading-[30px] p-4 text'>
                             Proficient in React, Vue.js, and Angular, with a strong passion for UI/UX. I build web applications efficiently, prioritizing a seamless user experience.
                         </p>
                     </div>
@@ -85,13 +85,13 @@ const Skills = ()=>{
             <motion.div variants={fadeIn("left","spring",0.1,1)} className='  justify-center items-center p-4'>
                 <div className="mockup-browser  bg-neutral/10">
                     <div className="mockup-browser-toolbar ">
-                        <div className="input">https://www.tvkaes.dev</div>
+                        <div className="input !input-ghost !bg-[#493c4b]/30">https://www.tvkaes.dev</div>
                     </div>
                     <div className="justify-center px-4 py-16 bg-base-200/45">
-                        <h2 className={`${styles.sectionSubText} !text-neutral/50  text-center`}>
+                        <h2 className={`${styles.sectionSubText} !text-neutral/70  text-center`}>
                            Software & Web Dev
                         </h2>
-                        <p className='mt-3 !text-neutral/50 font-medium text-[17px] max-w-3xl leading-[30px] p-1.5'>
+                        <p className='mt-3 !text-neutral/70 font-medium text-[17px] max-w-3xl leading-[30px] p-1.5'>
                         Web and software developer specializing in JavaScript and TypeScript, with expertise in both frontend and backend solutions using Node.js and MongoDB.
                         </p>
                     </div>

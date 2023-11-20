@@ -13,7 +13,7 @@ const About = ()=>{
             <div>
                 <motion.div variants={textVariant()}>
                     <p className={`${styles.sectionSubText} !text-neutral`}>Introduction</p>
-                    <h2 className={`${styles.sectionHeadText} !text-neutral`}>Overview.</h2>
+                    <h2 className={`${styles.sectionHeadText} !text-neutral`}>Overview</h2>
                 </motion.div>
                 <motion.p variants={fadeIn("","",0.1,1)} className='mt-4 text-neutral text-[17px] max-w-3xl leading-[30px]'>
                     I am a quick learning person with a very open-passionate wide sight for learning new things. My main interest is web design. I also seek to learn more about this field. 

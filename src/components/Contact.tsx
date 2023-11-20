@@ -56,13 +56,13 @@ const Contacts = ()=>{
                     <div className='grid grid-cols-1 lg:grid-cols-2 my-auto'>
                         <div className='p-6 space-y-4'>
                             <h2 className={`text-3xl  font-bold text-center text-gradient`}>Jonathan Gonzalez</h2>
-                            <p className={`${styles.sectionSubText} flex items-center justify-center !text-neutral/50`}>Frontend Developer</p>
-                            <p className='flex items-center justify-center text-lg font-semibold'><span><img src={location} /></span>Rosarito,Baja California</p>
+                            <p className={`${styles.sectionSubText} flex items-center justify-center !text-neutral/50`}>Front-end Developer</p>
+                            <p className='flex items-center justify-center text-lg font-semibold'><span><img src={location} /></span>Rosarito, Baja California</p>
                         </div>
 
                         <div className='flex flex-col gap-6 space-y-4'>
                             <div className='flex flex-col justify-center items-center gap-4'>
-                                <p className={`text-lg flex items-center justify-center !text-neutral`}>Feel free to contact me <span className='ml-4'><img src={gmail}></img></span></p>
+                                <p className={`text-lg flex items-center justify-center !text-neutral`}>Don't hesitate to reach out<span className='ml-4'><img src={gmail}></img></span></p>
                                 <div className="join" id='input'>
                                     <input className="input input-bordered join-item bg-neutral/20 border-none text-neutral/50 input-disabled" value={inputValue}/>
                                     <button className="btn join-item btn-primary" onClick={handleCopyClick}>Copy</button>
