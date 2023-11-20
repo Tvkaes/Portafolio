@@ -1,6 +1,6 @@
-import {Suspense,useEffect,useState} from 'react'
+import {useEffect,useState} from 'react'
 import { Canvas,extend } from '@react-three/fiber'
-import { OrbitControls,Preload,useGLTF,useAnimations,Cloud,Clouds, Float } from '@react-three/drei'
+import { OrbitControls,useGLTF,useAnimations,Cloud,Clouds, Float } from '@react-three/drei'
 import * as THREE from 'three'
 
 extend({ OrbitControls,useAnimations,useGLTF})

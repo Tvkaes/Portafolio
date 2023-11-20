@@ -1,7 +1,7 @@
 
 import { styles } from '../styles'
 import CloudCanvas from './canvas/clouds'
-import {motion} from 'framer-motion' 
+
 
 
 
