@@ -13,7 +13,7 @@ const Hero = ()=>{
 
     return(
         <>
-        <section className='relative w-full h-screen mx-auto flex flex-wrap '>
+        <section id='hero' className='relative w-full h-screen mx-auto flex flex-wrap '>
         <div  className='-z-50 h-screen w-screen absolute  overflow-hidden'>
              <CloudCanvas></CloudCanvas>
             </div>

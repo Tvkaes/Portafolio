@@ -1,8 +1,10 @@
-import { Link } from "react-router-dom";
+
 import { navLinks } from "../constants";
 import { useState } from "react";
 import { styles } from "../styles";
-import { logo } from "../assets";
+import {motion} from 'framer-motion'
+
+
 
 const Navbar = ()=>{
 
@@ -11,22 +13,44 @@ const Navbar = ()=>{
     return(
         <>
          <nav className={`${styles.paddingX} w-full flex items-center py-3 fixed top-0 z-20 backdrop`}>
-            <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
-                <Link to={"/"} className='flex items-center gap-2 btn btn-ghost' onClick={()=>{
+            <div className='w-full flex justify-end items-center max-w-7xl mx-auto'>
+                {/* <Link to={"/"} className='flex items-center gap-2 btn btn-ghost' onClick={()=>{
                 setActive("");
                 window.scrollTo(0,0)
                 }}>
                 <img src={logo} className='w-9 h-9 object-contain'></img>
                 <p className='text-neutral text-[18px] font-bold cursor-pointer flex'>Jonathan &nbsp; <span className='sm:block hidden'> Gonzalez</span></p>
                 
-                </Link>
-                <ul className=' list-none hidden sm:flex flex-row gap-10 '>
+                </Link> */}
+                {/* <ul className=' list-none hidden sm:flex flex-row gap-10 '>
                     {navLinks.map((link)=>(
                     <li onClick={()=> setActive(link.title)} key={link.id} className={`${active === link.title ? "text-opal" :"text-neutral"} hover:text-white text-[18px] font-medium cursor-pointer`}>
                         <a href={`#${link.id}`}>{link.title}</a>
                     </li>
                     ))}
-                </ul>
+                </ul> */}
+                <div className="flex space-x-1 ">
+                   
+                    {navLinks.map((tab)=>(
+                        <a key={tab.id} onClick={()=>setActive(tab.id)}
+                            href={`#${tab.id}`}
+                            style={{WebkitTapHighlightColor:"transparent"}}
+                            className={`${active === tab.id ? "":"hover:text-wwhite/60"} relative rounded-full px-3 py-1.5 text-md font- text-[#875575]  transition focus-visible:outline-2`}
+                        >
+                            {active === tab.id && (
+                                <motion.span
+                                    layoutId="bubble"
+                                    className="absolute inset-0 z-10 bg-white mix-blend-difference"
+                                    style={{borderRadius:9999}}
+                                    transition={{type:"spring",bounce:0.2,duration:0.6}}
+                                />
+                            )}
+                           
+                            {tab.title}
+                        </a>
+                    ))}
+
+                </div>
 
                 <div className='sm:hidden flex flex-1 justify-end items-center drawer drawer-end '>     
                     <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />

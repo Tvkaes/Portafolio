@@ -21,6 +21,7 @@ import typescript from "./tech/typescript.png";
 import three from './tech/threejs.svg'
 import nest from './tech/nest.png'
 import location from './location.svg'
+import home from "./home.svg"
 
 import gmail from './social/gmail.svg'
 import linkedin from './social/linkedin.svg'
@@ -58,7 +59,8 @@ export{
     weather,
     gmail,
     linkedin,
-    twitter
+    twitter,
+    home
 
 
 }
