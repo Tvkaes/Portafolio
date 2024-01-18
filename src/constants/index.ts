@@ -107,6 +107,7 @@ const projects = [
 ];
 
 
+
 const technologies = [
   {
     name: "HTML 5",

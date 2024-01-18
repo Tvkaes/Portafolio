@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@apollo/client": "^3.8.8",
     "@react-three/drei": "^9.88.16",
     "@react-three/fiber": "^8.15.11",
     "@types/three": "^0.158.2",
@@ -19,8 +20,12 @@
     "maath": "^0.10.4",
     "postcss": "^8.4.31",
     "react": "^18.2.0",
+    "react-autocomplete-hint": "^2.0.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.18.0",
+    "react-extract-colors": "^1.0.3",
+    "react-router": "^6.21.1",
+    "react-router-dom": "^6.21.1",
+    "react-type-animation": "^3.2.0",
     "three": "^0.158.0",
     "whatamesh": "^0.2.0"
   },
@@ -37,6 +42,7 @@
     "sass": "^1.69.5",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-pages": "^0.32.0"
   }
 }

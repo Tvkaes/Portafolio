@@ -69,7 +69,7 @@ const Skills = ()=>{
         <div className='w-full flex-wrap grid lg:grid-cols-2 grid-cols-1 mt-12 '>
             <motion.div variants={fadeIn("right","spring",0.1,1)} className=' justify-center items-center p-4'>
 
-                <div className="mockup-window  bg-base-300/10">
+                <div className="mockup-window  bg-base-300/20">
                     <div className=" justify-center px-4 py-16 bg-base-200/45">
                     <h2 className={`${styles.sectionSubText}  text-center text-bold !text-neutral/70`}>
                             Frontend Developer

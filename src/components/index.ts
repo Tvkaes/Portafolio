@@ -10,10 +10,12 @@ import Contact from "./Contact";
 
 
 
+
 export {
     Works,
     Hero,
     About,
     Skills,
-    Contact
+    Contact,
+  
 }

@@ -1,7 +1,9 @@
-import { BrowserRouter } from 'react-router-dom'
-import { About,Skills, Contact } from './components'
-import {Hero} from './components'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
+
+
+import { Home } from './pages/home'
+
 
 
 
@@ -9,18 +11,18 @@ function App() {
 
   return (
     <>
+   
+      
     <BrowserRouter>
-      <div className='relative '>
-        <Navbar />
-        <Hero />
-        {/* <Works /> */}
-        <About />
-        <Skills />
-        <Contact />
+      <Navbar />
+
+      <Routes>
+        <Route index path='/' element={<Home/>}></Route>
         
-      </div>
+      </Routes>
+
     </BrowserRouter>
-     
+  
     </>
   )
 }

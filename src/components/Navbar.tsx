@@ -33,7 +33,7 @@ const Navbar = ()=>{
                    
                     {navLinks.map((tab)=>(
                         <a key={tab.id} onClick={()=>setActive(tab.id)}
-                            href={`#${tab.id}`}
+                            href={`/#${tab.id}`}
                             style={{WebkitTapHighlightColor:"transparent"}}
                             className={`${active === tab.id ? "":"hover:text-wwhite/60"} relative rounded-full px-3 py-1.5 text-md font- text-[#875575]  transition focus-visible:outline-2`}
                         >

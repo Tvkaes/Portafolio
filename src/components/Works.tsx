@@ -3,6 +3,8 @@ import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn,textVariant } from '../utils/motion'
 import { styles } from '../styles'
+import { code } from '../assets'
+import { internet } from '../assets'
 
 
 interface Props {
@@ -15,7 +17,7 @@ interface Props {
 
 
 
-const ProjectCard = ({index,name,description,image}:Props)=>(
+const ProjectCard = ({index,name,description,image,source_code_link}:Props)=>(
 
     <motion.div variants={fadeIn("right","spring",0.5*index,0.75)} className="card sm:w-[360px] w-full bg-base-100 shadow-xl">
         <figure className='h-36'><img src={image} alt={name} /></figure>
@@ -24,14 +26,14 @@ const ProjectCard = ({index,name,description,image}:Props)=>(
                 {name}
             </h2>
             <p className='text-neutral/60'>{description}</p>
-            {/* <div className="card-actions justify-end">
+            <div className="card-actions justify-end">
                 <div onClick={()=> window.open(source_code_link,"_blank")} className='flex justify-center items-center cursor-pointer btn btn-sm btn-circle'>
                      <img src={code} alt='code' className='w-1/2 h-1/2 object-contain'/>
                 </div>
                 <div onClick={()=> window.open(source_code_link,"_blank")} className='flex justify-center items-center cursor-pointer btn btn-sm btn-circle'>
                     <img src={internet} alt='code' className='w-1/2 h-1/2 object-contain'/>
                 </div>
-            </div> */}
+            </div>
         </div>
     </motion.div>
 )

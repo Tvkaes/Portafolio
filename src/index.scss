@@ -9,7 +9,6 @@
   box-sizing: border-box;
   font-family: 'Red Hat Display', sans-serif;
   scroll-behavior: smooth;
-  
 }
 
 .hash-span {
@@ -50,6 +49,7 @@ html, body {
   text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 
@@ -289,6 +289,12 @@ html, body {
   animation: blink 1s step-end infinite;
 }
 
+.inner-shadow{
+  box-shadow: 2px 0px 32px 10px rgba(0,0,0,0.11) inset;
+-webkit-box-shadow: 2px 0px 32px 10px rgba(0,0,0,0.11) inset;
+-moz-box-shadow: 2px 0px 32px 10px rgba(0,0,0,0.11) inset;
+}
+
 @keyframes scroll {
   to {
     transform: translate(calc(-50% - 0.5rem));
@@ -305,4 +311,11 @@ html, body {
   0% { opacity: 1.0; }
   50% { opacity: 0.0; }
   100% { opacity: 1.0; }
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
 }
