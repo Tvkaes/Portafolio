@@ -9,7 +9,7 @@ import { fadeIn } from '../utils/motion'
 
 interface Props{
     index:number,
-    icon?:any,
+    icon?: string,
     name:string,
     link:string
 }
@@ -79,12 +79,6 @@ const Contacts = ()=>{
                        
 
                     </div>
-
-                    {/* <div className="card-actions justify-end">
-                        <button className="btn btn-secondary">Download CV</button>
-                    </div> */}
-                    
-                    
                 </div>
                 
             </div>
@@ -96,4 +90,5 @@ const Contacts = ()=>{
 }
 
 
-export default SectionWrapper(Contacts,"contact")
+const WrappedContacts = SectionWrapper(Contacts, "contact");
+export default WrappedContacts;

@@ -10,11 +10,6 @@ interface Props{
 }
 
 const CloudsModel = ({isMobile}:Props)=>{
-
-   
-    
-   
-
     return(
     <>
     <group>
@@ -45,7 +40,7 @@ const  CloudCanvas =()=>{
         const mediaQuery = window.matchMedia('(max-width:500px)');
         setIsMobile(mediaQuery.matches);
     
-        const handleMediaQueryChange = (event:any)=>{
+        const handleMediaQueryChange = (event: MediaQueryListEvent) => {
           setIsMobile(event.matches)
         }
     

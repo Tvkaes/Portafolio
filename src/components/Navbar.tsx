@@ -14,21 +14,6 @@ const Navbar = ()=>{
         <>
          <nav className={`${styles.paddingX} w-full flex items-center py-3 fixed top-0 z-20 backdrop`}>
             <div className='w-full flex justify-end items-center max-w-7xl mx-auto'>
-                {/* <Link to={"/"} className='flex items-center gap-2 btn btn-ghost' onClick={()=>{
-                setActive("");
-                window.scrollTo(0,0)
-                }}>
-                <img src={logo} className='w-9 h-9 object-contain'></img>
-                <p className='text-neutral text-[18px] font-bold cursor-pointer flex'>Jonathan &nbsp; <span className='sm:block hidden'> Gonzalez</span></p>
-                
-                </Link> */}
-                {/* <ul className=' list-none hidden sm:flex flex-row gap-10 '>
-                    {navLinks.map((link)=>(
-                    <li onClick={()=> setActive(link.title)} key={link.id} className={`${active === link.title ? "text-opal" :"text-neutral"} hover:text-white text-[18px] font-medium cursor-pointer`}>
-                        <a href={`#${link.id}`}>{link.title}</a>
-                    </li>
-                    ))}
-                </ul> */}
                 <div className="flex space-x-1 ">
                    
                     {navLinks.map((tab)=>(

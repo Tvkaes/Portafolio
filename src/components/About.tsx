@@ -32,4 +32,5 @@ const About = ()=>{
     )
 }
 
-export default SectionWrapper(About,"about")
+const WrappedAbout = SectionWrapper(About, "about");
+export default WrappedAbout;

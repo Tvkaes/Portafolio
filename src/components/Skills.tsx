@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 interface Props{
     index:number,
     name?:string,
-    icon?:any;
+    icon?: string; // Assuming icon is a URL string
 }
 
 const Skill = ({index,name,icon}:Props)=>(
@@ -120,4 +120,5 @@ const Skills = ()=>{
 
 
 
-export default SectionWrapper(Skills,'skills')
+const WrappedSkills = SectionWrapper(Skills, 'skills');
+export default WrappedSkills;

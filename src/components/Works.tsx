@@ -11,8 +11,8 @@ interface Props {
     index:number
     name?:string
     description?:string
-    image?:any
-    source_code_link?:any
+    image?:string
+    source_code_link?: string
 }
 
 
@@ -67,4 +67,5 @@ const Works = ()=>{
 }
 
 
-export default SectionWrapper(Works);
+const WrappedWorks = SectionWrapper(Works);
+export default WrappedWorks;

@@ -6,7 +6,6 @@ const Home =()=>{
 
     return(
         <div className='relative '>
-       
         <Hero />
         <Works />
         <About />
